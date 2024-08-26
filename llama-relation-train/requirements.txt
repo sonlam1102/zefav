@@ -1,0 +1,13 @@
+# Check CUDA version of pytorch
+# torch==2.0.1
+torch
+transformers
+datasets
+evaluate
+accelerate
+bitsandbytes
+peft
+scipy
+trl
+tensorboard
+# flash-attn
