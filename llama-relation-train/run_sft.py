@@ -196,7 +196,7 @@ model = AutoModelForCausalLM.from_pretrained(
     quantization_config=quantization_config,
     trust_remote_code=script_args.trust_remote_code,
     torch_dtype=torch_dtype,
-    token=script_args.use_auth_token,
+    token="<Please fill your Huggingface access Token here>",
     low_cpu_mem_usage=script_args.low_cpu_mem_usage,
     device_map="auto",
     use_flash_attention_2=script_args.use_flash_attention_2,
@@ -222,7 +222,7 @@ else:
         extension,
         data_files=data_files,
         cache_dir=script_args.cache_dir,
-        token=script_args.token,
+        token="<Please fill your Huggingface access Token here>",
     )
 
 

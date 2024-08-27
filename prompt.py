@@ -295,7 +295,7 @@ def load_peft_model(peft_model_name, device="auto"):
         model_max_length=2048,
         padding_side="left",
         truncation_side="left",
-        token="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"
+        token="<Please fill your Huggingface access Token here>"
     )
     tokenizer.pad_token_id = tokenizer.eos_token_id
 
@@ -314,7 +314,7 @@ def load_peft_model(peft_model_name, device="auto"):
         # load_in_4bit=False,
         # load_in_8bit=True,
         quantization_config=quantization_config,
-        token="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",
+        token="<Please fill your Huggingface access Token here>",
         use_flash_attention_2=False,
         device_map=device
     )

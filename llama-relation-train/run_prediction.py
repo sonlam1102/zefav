@@ -52,12 +52,12 @@ def load_peft_model(peft_model_name, **kwargs):
         model_max_length=1024,
         padding_side="left",
         truncation_side="left",
-        token="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",
+        token="<Please fill your Huggingface access Token here>",
     )
     tokenizer.pad_token_id = tokenizer.eos_token_id
     model = AutoModelForCausalLM.from_pretrained(
         peft_model_name,
-        token="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",
+        token="<Please fill your Huggingface access Token here>",
         # quantization_config=quantization_config,
         torch_dtype=torch.bfloat16,
         use_flash_attention_2=True,
